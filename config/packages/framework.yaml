@@ -9,6 +9,11 @@ framework:
     #esi: true
     #fragments: true
 
+    http_client:
+        default_options:
+            verify_peer: true
+            cafile: ./frankenphp/certs/tls.pem
+
 when@test:
     framework:
         test: true
